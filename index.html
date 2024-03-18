@@ -1,604 +1,576 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>Nebraska's Counties</title>
-    <link rel="stylesheet" href="new.css">
-    <link rel="stylesheet"  type = "text/css" href="css/simple.css"> 
-    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <style>
-      body {
-        background-color: cornsilk; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; margin: 25px; padding-right: 50px;
-      }
-      h2 {color: maroon; margin-bottom: 5px;}
-      p {margin-top: 5px;}
-      ul {margin-top: 5px;}
-      .importantPoint {color: red;}
-      /*Map now floats with the content*/
-      #nebraskaMap {width: 900px; height: auto; padding: 10px;}
-      #countyHistory{ text-align: center;}
-        .flex-container {
-            display: flex;
-            justify-content: left;
-            flex-wrap: wrap;
-            max-width: 1500px;
+        /*Map now floats with the content*/
+        #nebraskaMap {
+            padding: 10px;
+            max-width: 100%; /* Ensure the image does not exceed the container width */
+            height: auto; /* Maintain aspect ratio */
+            transition: width 0.5s ease;
         }
-
-        .flex-child {
-            flex: 2;
-            border: 1px solid white;
-            background-color: #944547;
-            text-align: center;
-            color: white;
-            padding: 20px;
-            font-size: 25px;
-            gap: 20px;
-        }
-        a:link {
-            text-decoration: none;
-            color: black;
-        }
-
-      a:hover{
-        text-decoration: underline;
-        color:black;
-        background-color: lightcoral;
-      }
-
-      .image-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .flex-container-horizontal {
-        display: flex;
-        gap: 50px;
-        flex: 1 1 0;
-      }
-
-        .flex-container-vertical {
-            display: flex;
-            flex-direction: column;
-            max-width: 1200px;
-        }
-
-      
     </style>
-  </head>
+</head>
   <body>
-    <h1>The Many Counties of Nebraska</h1>
-    <div class="flex-container">
-      <div class="flex-child">
-        <a href="index.html">Home</a>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="index.html">Nebraska's Counties</a>
+          <a class="nav-link" href="page2.html">Liscence Plate County Numbers</a>
+      </nav>
+
+      <div class="flex-container-horizontal">
+          <div class="flex-container-vertical">
+              <p>
+                  Contrary to what many people would say, there is an incredible amount of diversity across Nebraska and her many unique counties. From the Sandhills of Box Butte County to the fields of Hall County,
+                  there is plenty to see.
+              </p>
+              <img id="nebraskaMap" src="images/nebraska-county-map-colored-000000.png">
+              <h2>Here are some neat facts about Nebraska Counties</h2>
+              <ul>
+                  <li class="importantPoint">There are a total of 93 counties.</li>
+                  <li>Many counties are named after Presidents or Union Generals</li>
+                  <li>Every state liscensce plate is affiliated with a county.</li>
+                  <li>Cherry County (5,961 sq mi) is the largest county in Nebraska. It is bigger than some other states.</li>
+                  <li>Sarpy County (241 sq mi) is the smallest county in Nebraska.</li>
+                  <li>Arthur County is the least populate county in Nebraska.</li>
+                  <li>Douglas County is the most populate county in Nebraska.</li>
+                  <li>Despite being larger, Nebraska has 6 less counties than Iowa.</li>
+              </ul>
+
+
+              <h2 id="countyHistory">History of the Counties</h2>
+              <div class="flex_container">
+                  <p>
+                      The history of Nebraska's counties is a fascinating tale that intertwines with the broader narrative of American westward expansion, territorial organization, and local governance. Nebraska, known for its vast prairies, rolling hills, and iconic plains, was once part of the Great Plains that formed the heartland of Native American cultures long before European exploration and settlement.
+
+                      Following the Louisiana Purchase in 1803, which included the territory that would become Nebraska, the region saw an influx of fur traders, explorers, and eventually settlers. The establishment of forts and trading posts along major rivers, such as the Missouri and Platte, marked the initial stages of non-native presence in the area. However, organized county government did not emerge until much later in Nebraska's history.
+
+                      The Nebraska Territory was created on May 30, 1854, and its boundaries initially extended from the Missouri River in the east to the Rocky Mountains in the west. As pioneers and settlers began to populate the territory, the need for local administration became apparent. Counties were established to provide essential services, such as law enforcement, education, and infrastructure development, to the burgeoning communities.
+
+                      Burt, Cass, Dodge, Douglas, Otoe, Nemaha, Richardson and Washington Counties was the original 8 counties created on November 23, 1854. This was 13 years before Nebraska even became a state. They
+                      are all counties on the eastern side of Nebraska, as that was the area first settled.
+
+                      One of the earliest counties in Nebraska was Douglas County, named after Stephen A. Douglas, a prominent political figure of the time. As more settlers arrived, the territorial legislature continued to carve out new counties, reflecting the dynamic demographic and geographic changes occurring across the region.
+
+                      The county-forming process often involved debates over boundaries, names, and administrative centers, reflecting the diverse interests and identities of settlers. Counties were named after various individuals, geographic features, Native American tribes, and historical events, each contributing to the rich tapestry of Nebraska's local history.
+
+                      By the time Nebraska achieved statehood on March 1, 1867, it comprised several dozen counties, each with its own unique heritage and character. Over the years, additional counties were established through legislative action, bringing the total to the current count of 93. Today, Nebraska's counties serve as vital units of local government, preserving the legacy of settlement, agriculture, industry, and community that define the Cornhusker State's identity.
+
+                      Garden County was the last county, formed in 1909 by popular vote. Voters in the general election of November 2, 1909 approved making the northern part of Deuel County into its own county. It is said the county
+                      was so named in the hope that this land should become the garden of the West or with allusion to the "Garden of Eden".
+                  </p>
+              </div>
+
+              <h2 id="countyGeography">Geography of the Counties</h2>
+              <div class="flex_container">
+                  <p>
+                      The geography of Nebraska's counties reflects the state's diverse landscape, characterized by vast plains, rolling hills, river valleys, and pockets of woodland. Stretching from the Missouri River in the east to the High Plains in the west, Nebraska's counties encompass a variety of natural features and ecosystems, each contributing to the state's rich environmental tapestry.
+
+                      In eastern Nebraska, counties like Douglas, Lancaster, and Sarpy are situated within the Missouri River Valley, characterized by fertile farmland and abundant water resources. This region benefits from a temperate climate and is known for its agricultural productivity, particularly in corn, soybeans, and livestock production. Urban centers such as Omaha and Lincoln, located in Douglas and Lancaster counties respectively, serve as hubs of commerce, education, and culture, driving regional development and growth.
+
+                      Moving westward, counties like Buffalo, Kearney, and Dawson transition into the expansive Nebraska Sandhills, a unique ecosystem of grass-stabilized sand dunes covering over a quarter of the state. This region, sparsely populated and largely untouched by intensive agriculture, supports ranching and grazing operations, as well as outdoor recreational activities such as hunting, fishing, and birdwatching.
+
+                      In the central part of the state, counties like Hall, Adams, and Phelps lie within the fertile Platte River Valley, renowned for its extensive wetlands and migratory bird habitat. This area is a critical stopover point for millions of waterfowl during their annual migrations, attracting birdwatchers and nature enthusiasts from around the world. Agriculture remains a dominant industry in the valley, with irrigated crops like corn, soybeans, and alfalfa supplementing the natural prairie grasses.
+
+                      Towards the western reaches of Nebraska, counties such as Scotts Bluff, Banner, and Sioux give way to the rugged terrain of the High Plains, characterized by vast expanses of grassland, buttes, and mesas. This region, often referred to as the Nebraska Panhandle, boasts stunning geological formations like Scotts Bluff National Monument and Chimney Rock, which served as iconic landmarks for pioneers on the Oregon Trail. Agriculture, particularly dryland farming and ranching, is the primary economic activity in the Panhandle, with ranchers raising cattle and sheep on the vast open ranges.
+
+                      Overall, Nebraska's counties showcase the state's remarkable diversity of landscapes and ecosystems, from fertile river valleys to arid plains, each contributing to the state's agricultural heritage, natural beauty, and cultural identity.
+                  </p>
+              </div>
+
+          </div>
+
+          <div class="flex-container-vertical">
+
+              <input type="text" id="countySearchInput" onkeyup="countySearch()" placeholder="Search for counties.." title="Type in a County's name'">
+
+              <table id="countiesTable">
+                  <tr class="header">
+                      <th style="width:40%; text-align:left">County</th>
+                      <th style="width:40%; text-align:left">Seat</th>
+                      <th style="width:20%; text-align:left">Plate Number</th>
+                  </tr>
+                  <tr>
+                      <td><a href="adams.html">Adams</a></td>
+                      <td>Hastings</td>
+                      <td>14</td>
+                  </tr>
+                  <tr>
+                      <td>Antelope</td>
+                      <td>Neligh</td>
+                      <td>8</td>
+                  </tr>
+                  <tr>
+                      <td>Arthur</td>
+                      <td>Arthur</td>
+                      <td>89</td>
+                  </tr>
+                  <tr>
+                      <td>Banner</td>
+                      <td>Harrisburg</td>
+                      <td>91</td>
+                  </tr>
+                  <tr>
+                      <td>Blaine</td>
+                      <td>Brewster</td>
+                      <td>63</td>
+                  </tr>
+                  <tr>
+                      <td>Boone</td>
+                      <td>Albion</td>
+                      <td>16</td>
+                  </tr>
+                  <tr>
+                      <td>Box Butte</td>
+                      <td>Alliance</td>
+                      <td>3</td>
+                  </tr>
+                  <tr>
+                      <td>Boyd</td>
+                      <td>Butte</td>
+                      <td>14</td>
+                  </tr>
+                  <tr>
+                      <td>Brown</td>
+                      <td>Ainsworth</td>
+                      <td>29</td>
+                  </tr>
+                  <tr>
+                      <td>Buffalo</td>
+                      <td>Kearney</td>
+                      <td>25</td>
+                  </tr>
+                  <tr>
+                      <td>Burt</td>
+                      <td>Tekamah</td>
+                      <td>15</td>
+                  </tr>
+                  <tr>
+                      <td>Butler</td>
+                      <td>David City</td>
+                      <td>32</td>
+                  </tr>
+                  <tr>
+                      <td>Cass</td>
+                      <td>Plattsmouth</td>
+                      <td>14</td>
+                  </tr>
+                  <tr>
+                      <td>Cedar</td>
+                      <td>Hartington</td>
+                      <td>16</td>
+                  </tr>
+                  <tr>
+                      <td>Chase</td>
+                      <td>Imperial</td>
+                      <td>44</td>
+                  </tr>
+                  <tr>
+                      <td>Cherry</td>
+                      <td>Valentine</td>
+                      <td>20</td>
+                  </tr>
+                  <tr>
+                      <td>Cheyenne</td>
+                      <td>Sidney</td>
+                      <td>25</td>
+                  </tr>
+                  <tr>
+                      <td>Clay</td>
+                      <td>Clay Center</td>
+                      <td>22</td>
+                  </tr>
+                  <tr>
+                      <td>Colfax</td>
+                      <td>Schuyler</td>
+                      <td>15</td>
+                  </tr>
+                  <tr>
+                      <td>Cuming</td>
+                      <td>West Point</td>
+                      <td>4</td>
+                  </tr>
+                  <tr>
+                      <td>Custer</td>
+                      <td>Broken Bow</td>
+                      <td>56</td>
+                  </tr>
+                  <tr>
+                      <td>Dakota</td>
+                      <td>Dakota City</td>
+                      <td>29</td>
+                  </tr>
+                  <tr>
+                      <td>Dawes</td>
+                      <td>Chadron</td>
+                      <td>54</td>
+                  </tr>
+                  <tr>
+                      <td>Dawson</td>
+                      <td>Lexington</td>
+                      <td>16</td>
+                  </tr>
+                  <tr>
+                      <td>Deuel</td>
+                      <td>Chappell</td>
+                      <td>39</td>
+                  </tr>
+                  <tr>
+                      <td>Dixon</td>
+                      <td>Ponca</td>
+                      <td>10</td>
+                  </tr>
+                  <tr>
+                      <td>Dodge</td>
+                      <td>Fremont</td>
+                      <td>19</td>
+                  </tr>
+                  <tr>
+                      <td><a href="douglas.html">Douglas</a></td>
+                      <td>Omaha</td>
+                      <td>1</td>
+                  </tr>
+                  <tr>
+                      <td>Dundy</td>
+                      <td>Benkelman</td>
+                      <td>45</td>
+                  </tr>
+                  <tr>
+                      <td>Fillmore</td>
+                      <td>Geneva</td>
+                      <td>41</td>
+                  </tr>
+                  <tr>
+                      <td>Franklin</td>
+                      <td>Bloomington</td>
+                      <td>48</td>
+                  </tr>
+                  <tr>
+                      <td>Frontier</td>
+                      <td>Stockville</td>
+                      <td>23</td>
+                  </tr>
+                  <tr>
+                      <td>Furnas</td>
+                      <td>Beaver City</td>
+                      <td>47</td>
+                  </tr>
+                  <tr>
+                      <td>Gage</td>
+                      <td>Beatrice</td>
+                      <td>2</td>
+                  </tr>
+                  <tr>
+                      <td>Garden</td>
+                      <td>Oshkosh</td>
+                      <td>78</td>
+                  </tr>
+                  <tr>
+                      <td>Garfield</td>
+                      <td>Burwell</td>
+                      <td>77</td>
+                  </tr>
+                  <tr>
+                      <td>Gosper</td>
+                      <td>Elwood</td>
+                      <td>46</td>
+                  </tr>
+                  <tr>
+                      <td>Grant</td>
+                      <td>Hyannis</td>
+                      <td>88</td>
+                  </tr>
+                  <tr>
+                      <td>Greeley</td>
+                      <td>Greeley</td>
+                      <td>81</td>
+                  </tr>
+                  <tr>
+                      <td>Hall</td>
+                      <td>Grand Island</td>
+                      <td>33</td>
+                  </tr>
+                  <tr>
+                      <td>Hamilton</td>
+                      <td>Aurora</td>
+                      <td>5</td>
+                  </tr>
+                  <tr>
+                      <td>Harlan</td>
+                      <td>Alma</td>
+                      <td>35</td>
+                  </tr>
+                  <tr>
+                      <td>Hayes</td>
+                      <td>Hayes Center</td>
+                      <td>80</td>
+                  </tr>
+                  <tr>
+                      <td>Hooker</td>
+                      <td>Mullen</td>
+                      <td>72</td>
+                  </tr>
+                  <tr>
+                      <td>Howard</td>
+                      <td>St. Paul</td>
+                      <td>47</td>
+                  </tr>
+                  <tr>
+                      <td>Jefferson</td>
+                      <td>Fairbury</td>
+                      <td>8</td>
+                  </tr>
+                  <tr>
+                      <td>Johnson</td>
+                      <td>Tecumseh</td>
+                      <td>33</td>
+                  </tr>
+                  <tr>
+                      <td>Kearney</td>
+                      <td>Minden</td>
+                      <td>53</td>
+                  </tr>
+                  <tr>
+                      <td>Keith</td>
+                      <td>Ogallala</td>
+                      <td>69</td>
+                  </tr>
+                  <tr>
+                      <td>Keya Paha</td>
+                      <td>Springview</td>
+                      <td>58</td>
+                  </tr>
+                  <tr>
+                      <td>Kimball</td>
+                      <td>Kimball</td>
+                      <td>66</td>
+                  </tr>
+                  <tr>
+                      <td>Knox</td>
+                      <td>Center</td>
+                      <td>18</td>
+                  </tr>
+                  <tr>
+                      <td><a href="lancaster.html">Lancaster</a></td>
+                      <td>Lincoln</td>
+                      <td>2</td>
+                  </tr>
+                  <tr>
+                      <td>Lincoln</td>
+                      <td>North Platte</td>
+                      <td>16</td>
+                  </tr>
+                  <tr>
+                      <td>Logan</td>
+                      <td>Stapleton</td>
+                      <td>72</td>
+                  </tr>
+                  <tr>
+                      <td>Loup</td>
+                      <td>Taylor</td>
+                      <td>42</td>
+                  </tr>
+                  <tr>
+                      <td>McPherson</td>
+                      <td>Tryon</td>
+                      <td>71</td>
+                  </tr>
+                  <tr>
+                      <td>Madison</td>
+                      <td>Madison</td>
+                      <td>45</td>
+                  </tr>
+                  <tr>
+                      <td>Merrick</td>
+                      <td>Central City</td>
+                      <td>57</td>
+                  </tr>
+                  <tr>
+                      <td>Morrill</td>
+                      <td>Bridgeport</td>
+                      <td>65</td>
+                  </tr>
+                  <tr>
+                      <td>Nance</td>
+                      <td>Fullerton</td>
+                      <td>45</td>
+                  </tr>
+                  <tr>
+                      <td>Nemaha</td>
+                      <td>Auburn</td>
+                      <td>44</td>
+                  </tr>
+                  <tr>
+                      <td>Nuckolls</td>
+                      <td>Nelson</td>
+                      <td>36</td>
+                  </tr>
+                  <tr>
+                      <td>Otoe</td>
+                      <td>Nebraska City</td>
+                      <td>11</td>
+                  </tr>
+                  <tr>
+                      <td>Pawnee</td>
+                      <td>Pawnee City</td>
+                      <td>70</td>
+                  </tr>
+                  <tr>
+                      <td>Perkins</td>
+                      <td>Grant</td>
+                      <td>82</td>
+                  </tr>
+                  <tr>
+                      <td>Phelps</td>
+                      <td>Holdrege</td>
+                      <td>44</td>
+                  </tr>
+                  <tr>
+                      <td>Pierce</td>
+                      <td>Pierce</td>
+                      <td>30</td>
+                  </tr>
+                  <tr>
+                      <td>Platte</td>
+                      <td>Columbus</td>
+                      <td>11</td>
+                  </tr>
+                  <tr>
+                      <td>Polk</td>
+                      <td>Osceola</td>
+                      <td>67</td>
+                  </tr>
+                  <tr>
+                      <td>Red Willow</td>
+                      <td>McCook</td>
+                      <td>39</td>
+                  </tr>
+                  <tr>
+                      <td>Richardson</td>
+                      <td>Auburn</td>
+                      <td>44</td>
+                  </tr>
+                  <tr>
+                      <td>Rock</td>
+                      <td>Bassett</td>
+                      <td>84</td>
+                  </tr>
+                  <tr>
+                      <td>Saline</td>
+                      <td>Wilber</td>
+                      <td>44</td>
+                  </tr>
+                  <tr>
+                      <td>Sarpy</td>
+                      <td>Papillion</td>
+                      <td>5</td>
+                  </tr>
+                  <tr>
+                      <td>Saunders</td>
+                      <td>Wahoo</td>
+                      <td>2</td>
+                  </tr>
+                  <tr>
+                      <td>Scotts Bluff</td>
+                      <td>Gering</td>
+                      <td>65</td>
+                  </tr>
+                  <tr>
+                      <td>Seward</td>
+                      <td>Seward</td>
+                      <td>15</td>
+                  </tr>
+                  <tr>
+                      <td>Sheridan</td>
+                      <td>Rushville</td>
+                      <td>69</td>
+                  </tr>
+                  <tr>
+                      <td>Sherman</td>
+                      <td>Loup City</td>
+                      <td>48</td>
+                  </tr>
+                  <tr>
+                      <td>Sioux</td>
+                      <td>Harrison</td>
+                      <td>71</td>
+                  </tr>
+                  <tr>
+                      <td>Stanton</td>
+                      <td>Stanton</td>
+                      <td>47</td>
+                  </tr>
+                  <tr>
+                      <td>Thayer</td>
+                      <td>Hebron</td>
+                      <td>80</td>
+                  </tr>
+                  <tr>
+                      <td>Thomas</td>
+                      <td>Thedford</td>
+                      <td>78</td>
+                  </tr>
+                  <tr>
+                      <td>Thurston</td>
+                      <td>Pender</td>
+                      <td>24</td>
+                  </tr>
+                  <tr>
+                      <td>Valley</td>
+                      <td>Ord</td>
+                      <td>70</td>
+                  </tr>
+                  <tr>
+                      <td>Washington</td>
+                      <td>Blair</td>
+                      <td>30</td>
+                  </tr>
+                  <tr>
+                      <td>Wayne</td>
+                      <td>Wayne</td>
+                      <td>38</td>
+                  </tr>
+                  <tr>
+                      <td>Webster</td>
+                      <td>Red Cloud</td>
+                      <td>59</td>
+                  </tr>
+                  <tr>
+                      <td>Wheeler</td>
+                      <td>Bartlett</td>
+                      <td>68</td>
+                  </tr>
+                  <tr>
+                      <td>York</td>
+                      <td>York</td>
+                      <td>12</td>
+                  </tr>
+              </table>
+          </div>
       </div>
-      <div class="flex-child">
-        <a href="page2.html">Liscence Plate County Numbers</a>
-      </div>
-    </div>
 
-    <div class="flex-container-horizontal">
-        <div class="flex-container-vertical">
-            <p>
-                Contrary to what many people would say, there is an incredible amount of diversity across Nebraska and her many unique counties. From the Sandhills of Box Butte County to the fields of Hall County,
-                there is plenty to see.
-            </p>
-            <p>Below is a map of Nebraska's many counties.</p>
-            <img id="nebraskaMap" src="images/nebraska-county-map-colored-000000.png">
-            <h2>Here are some neat facts about Nebraska Counties</h2>
-            <ul>
-                <li class="importantPoint">There are a total of 93 counties.</li>
-                <li>Many counties are named after Presidents or Union Generals</li>
-                <li>Every state liscensce plate is affiliated with a county.</li>
-                <li>Cherry County (5,961 sq mi) is the largest county in Nebraska. It is bigger than some other states.</li>
-                <li>Sarpy County (241 sq mi) is the smallest county in Nebraska.</li>
-                <li>Arthur County is the least populate county in Nebraska.</li>
-                <li>Douglas County is the most populate county in Nebraska.</li>
-                <li>Despite being larger, Nebraska has 6 less counties than Iowa.</li>
-            </ul>
-
-
-            <h2 id="countyHistory">History of the Counties</h2>
-            <div class="flex_container">
-                <p>
-                    Burt, Cass, Dodge, Douglas, Otoe, Nemaha, Richardson and Washington Counties was the original 8 counties created on November 23, 1854. This was 13 years before Nebraska even became a state. They
-                    are all counties on the eastern side of Nebraska, as that was the area first settled.
-                </p>
-                <p>
-                    Garden County was formed in 1909 by popular vote. Voters in the general election of November 2, 1909 approved making the northern part of Deuel County into its own county. It is said the county
-                    was so named in the hope that this land should become the garden of the West or with allusion to the "Garden of Eden".
-            </div>
-
-        </div>
-
-        <div class="flex-container-vertical">
-
-            <input type="text" id="countySearchInput" onkeyup="countySearch()" placeholder="Search for counties.." title="Type in a County's name'">
-
-            <table id="countiesTable">
-                <tr class="header">
-                    <th style="width:40%; text-align:left">County</th>
-                    <th style="width:40%; text-align:left">Seat</th>
-                    <th style="width:20%; text-align:left">Plate Number</th>
-                </tr>
-                <tr>
-                    <td>Adams</td>
-                    <td>Hastings</td>
-                    <td>14</td>
-                </tr>
-                <tr>
-                    <td>Antelope</td>
-                    <td>Neligh</td>
-                    <td>8</td>
-                </tr>
-                <tr>
-                    <td>Arthur</td>
-                    <td>Arthur</td>
-                    <td>89</td>
-                </tr>
-                <tr>
-                    <td>Banner</td>
-                    <td>Harrisburg</td>
-                    <td>91</td>
-                </tr>
-                <tr>
-                    <td>Blaine</td>
-                    <td>Brewster</td>
-                    <td>63</td>
-                </tr>
-                <tr>
-                    <td>Boone</td>
-                    <td>Albion</td>
-                    <td>16</td>
-                </tr>
-                <tr>
-                    <td>Box Butte</td>
-                    <td>Alliance</td>
-                    <td>3</td>
-                </tr>
-                <tr>
-                    <td>Boyd</td>
-                    <td>Butte</td>
-                    <td>14</td>
-                </tr>
-                <tr>
-                    <td>Brown</td>
-                    <td>Ainsworth</td>
-                    <td>29</td>
-                </tr>
-                <tr>
-                    <td>Buffalo</td>
-                    <td>Kearney</td>
-                    <td>25</td>
-                </tr>
-                <tr>
-                    <td>Burt</td>
-                    <td>Tekamah</td>
-                    <td>15</td>
-                </tr>
-                <tr>
-                    <td>Butler</td>
-                    <td>David City</td>
-                    <td>32</td>
-                </tr>
-                <tr>
-                    <td>Cass</td>
-                    <td>Plattsmouth</td>
-                    <td>14</td>
-                </tr>
-                <tr>
-                    <td>Cedar</td>
-                    <td>Hartington</td>
-                    <td>16</td>
-                </tr>
-                <tr>
-                    <td>Chase</td>
-                    <td>Imperial</td>
-                    <td>44</td>
-                </tr>
-                <tr>
-                    <td>Cherry</td>
-                    <td>Valentine</td>
-                    <td>20</td>
-                </tr>
-                <tr>
-                    <td>Cheyenne</td>
-                    <td>Sidney</td>
-                    <td>25</td>
-                </tr>
-                <tr>
-                    <td>Clay</td>
-                    <td>Clay Center</td>
-                    <td>22</td>
-                </tr>
-                <tr>
-                    <td>Colfax</td>
-                    <td>Schuyler</td>
-                    <td>15</td>
-                </tr>
-                <tr>
-                    <td>Cuming</td>
-                    <td>West Point</td>
-                    <td>4</td>
-                </tr>
-                <tr>
-                    <td>Custer</td>
-                    <td>Broken Bow</td>
-                    <td>56</td>
-                </tr>
-                <tr>
-                    <td>Dakota</td>
-                    <td>Dakota City</td>
-                    <td>29</td>
-                </tr>
-                <tr>
-                    <td>Dawes</td>
-                    <td>Chadron</td>
-                    <td>54</td>
-                </tr>
-                <tr>
-                    <td>Dawson</td>
-                    <td>Lexington</td>
-                    <td>16</td>
-                </tr>
-                <tr>
-                    <td>Deuel</td>
-                    <td>Chappell</td>
-                    <td>39</td>
-                </tr>
-                <tr>
-                    <td>Dixon</td>
-                    <td>Ponca</td>
-                    <td>10</td>
-                </tr>
-                <tr>
-                    <td>Dodge</td>
-                    <td>Fremont</td>
-                    <td>19</td>
-                </tr>
-                <tr>
-                    <td><a href="douglas.html">Douglas</a></td>
-                    <td>Omaha</td>
-                    <td>1</td>
-                </tr>
-                <tr>
-                    <td>Dundy</td>
-                    <td>Benkelman</td>
-                    <td>45</td>
-                </tr>
-                <tr>
-                    <td>Fillmore</td>
-                    <td>Geneva</td>
-                    <td>41</td>
-                </tr>
-                <tr>
-                    <td>Franklin</td>
-                    <td>Bloomington</td>
-                    <td>48</td>
-                </tr>
-                <tr>
-                    <td>Frontier</td>
-                    <td>Stockville</td>
-                    <td>23</td>
-                </tr>
-                <tr>
-                    <td>Furnas</td>
-                    <td>Beaver City</td>
-                    <td>47</td>
-                </tr>
-                <tr>
-                    <td>Gage</td>
-                    <td>Beatrice</td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <td>Garden</td>
-                    <td>Oshkosh</td>
-                    <td>78</td>
-                </tr>
-                <tr>
-                    <td>Garfield</td>
-                    <td>Burwell</td>
-                    <td>77</td>
-                </tr>
-                <tr>
-                    <td>Gosper</td>
-                    <td>Elwood</td>
-                    <td>46</td>
-                </tr>
-                <tr>
-                    <td>Grant</td>
-                    <td>Hyannis</td>
-                    <td>88</td>
-                </tr>
-                <tr>
-                    <td>Greeley</td>
-                    <td>Greeley</td>
-                    <td>81</td>
-                </tr>
-                <tr>
-                    <td>Hall</td>
-                    <td>Grand Island</td>
-                    <td>33</td>
-                </tr>
-                <tr>
-                    <td>Hamilton</td>
-                    <td>Aurora</td>
-                    <td>5</td>
-                </tr>
-                <tr>
-                    <td>Harlan</td>
-                    <td>Alma</td>
-                    <td>35</td>
-                </tr>
-                <tr>
-                    <td>Hayes</td>
-                    <td>Hayes Center</td>
-                    <td>80</td>
-                </tr>
-                <tr>
-                    <td>Hooker</td>
-                    <td>Mullen</td>
-                    <td>72</td>
-                </tr>
-                <tr>
-                    <td>Howard</td>
-                    <td>St. Paul</td>
-                    <td>47</td>
-                </tr>
-                <tr>
-                    <td>Jefferson</td>
-                    <td>Fairbury</td>
-                    <td>8</td>
-                </tr>
-                <tr>
-                    <td>Johnson</td>
-                    <td>Tecumseh</td>
-                    <td>33</td>
-                </tr>
-                <tr>
-                    <td>Kearney</td>
-                    <td>Minden</td>
-                    <td>53</td>
-                </tr>
-                <tr>
-                    <td>Keith</td>
-                    <td>Ogallala</td>
-                    <td>69</td>
-                </tr>
-                <tr>
-                    <td>Keya Paha</td>
-                    <td>Springview</td>
-                    <td>58</td>
-                </tr>
-                <tr>
-                    <td>Kimball</td>
-                    <td>Kimball</td>
-                    <td>66</td>
-                </tr>
-                <tr>
-                    <td>Knox</td>
-                    <td>Center</td>
-                    <td>18</td>
-                </tr>
-                <tr>
-                    <td>Lancaster</td>
-                    <td>Lincoln</td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <td>Lincoln</td>
-                    <td>North Platte</td>
-                    <td>16</td>
-                </tr>
-                <tr>
-                    <td>Logan</td>
-                    <td>Stapleton</td>
-                    <td>72</td>
-                </tr>
-                <tr>
-                    <td>Loup</td>
-                    <td>Taylor</td>
-                    <td>42</td>
-                </tr>
-                <tr>
-                    <td>McPherson</td>
-                    <td>Tryon</td>
-                    <td>71</td>
-                </tr>
-                <tr>
-                    <td>Madison</td>
-                    <td>Madison</td>
-                    <td>45</td>
-                </tr>
-                <tr>
-                    <td>Merrick</td>
-                    <td>Central City</td>
-                    <td>57</td>
-                </tr>
-                <tr>
-                    <td>Morrill</td>
-                    <td>Bridgeport</td>
-                    <td>65</td>
-                </tr>
-                <tr>
-                    <td>Nance</td>
-                    <td>Fullerton</td>
-                    <td>45</td>
-                </tr>
-                <tr>
-                    <td>Nemaha</td>
-                    <td>Auburn</td>
-                    <td>44</td>
-                </tr>
-                <tr>
-                    <td>Nuckolls</td>
-                    <td>Nelson</td>
-                    <td>36</td>
-                </tr>
-                <tr>
-                    <td>Otoe</td>
-                    <td>Nebraska City</td>
-                    <td>11</td>
-                </tr>
-                <tr>
-                    <td>Pawnee</td>
-                    <td>Pawnee City</td>
-                    <td>70</td>
-                </tr>
-                <tr>
-                    <td>Perkins</td>
-                    <td>Grant</td>
-                    <td>82</td>
-                </tr>
-                <tr>
-                    <td>Phelps</td>
-                    <td>Holdrege</td>
-                    <td>44</td>
-                </tr>
-                <tr>
-                    <td>Pierce</td>
-                    <td>Pierce</td>
-                    <td>30</td>
-                </tr>
-                <tr>
-                    <td>Platte</td>
-                    <td>Columbus</td>
-                    <td>11</td>
-                </tr>
-                <tr>
-                    <td>Polk</td>
-                    <td>Osceola</td>
-                    <td>67</td>
-                </tr>
-                <tr>
-                    <td>Red Willow</td>
-                    <td>McCook</td>
-                    <td>39</td>
-                </tr>
-                <tr>
-                    <td>Richardson</td>
-                    <td>Auburn</td>
-                    <td>44</td>
-                </tr>
-                <tr>
-                    <td>Rock</td>
-                    <td>Bassett</td>
-                    <td>84</td>
-                </tr>
-                <tr>
-                    <td>Saline</td>
-                    <td>Wilber</td>
-                    <td>44</td>
-                </tr>
-                <tr>
-                    <td>Sarpy</td>
-                    <td>Papillion</td>
-                    <td>5</td>
-                </tr>
-                <tr>
-                    <td>Saunders</td>
-                    <td>Wahoo</td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <td>Scotts Bluff</td>
-                    <td>Gering</td>
-                    <td>65</td>
-                </tr>
-                <tr>
-                    <td>Seward</td>
-                    <td>Seward</td>
-                    <td>15</td>
-                </tr>
-                <tr>
-                    <td>Sheridan</td>
-                    <td>Rushville</td>
-                    <td>69</td>
-                </tr>
-                <tr>
-                    <td>Sherman</td>
-                    <td>Loup City</td>
-                    <td>48</td>
-                </tr>
-                <tr>
-                    <td>Sioux</td>
-                    <td>Harrison</td>
-                    <td>71</td>
-                </tr>
-                <tr>
-                    <td>Stanton</td>
-                    <td>Stanton</td>
-                    <td>47</td>
-                </tr>
-                <tr>
-                    <td>Thayer</td>
-                    <td>Hebron</td>
-                    <td>80</td>
-                </tr>
-                <tr>
-                    <td>Thomas</td>
-                    <td>Thedford</td>
-                    <td>78</td>
-                </tr>
-                <tr>
-                    <td>Thurston</td>
-                    <td>Pender</td>
-                    <td>24</td>
-                </tr>
-                <tr>
-                    <td>Valley</td>
-                    <td>Ord</td>
-                    <td>70</td>
-                </tr>
-                <tr>
-                    <td>Washington</td>
-                    <td>Blair</td>
-                    <td>30</td>
-                </tr>
-                <tr>
-                    <td>Wayne</td>
-                    <td>Wayne</td>
-                    <td>38</td>
-                </tr>
-                <tr>
-                    <td>Webster</td>
-                    <td>Red Cloud</td>
-                    <td>59</td>
-                </tr>
-                <tr>
-                    <td>Wheeler</td>
-                    <td>Bartlett</td>
-                    <td>68</td>
-                </tr>
-                <tr>
-                    <td>York</td>
-                    <td>York</td>
-                    <td>12</td>
-                </tr>
-            </table>
-        </div>
-    </div>
-
-    <script>
-        function countySearch() {
-            var input = document.getElementById("countySearchInput");
-            var filter = input.value.toUpperCase();
-            var table = document.getElementById("countiesTable");
-            var tr = table.getElementsByTagName("tr");
-            for (i = 0; i < tr.length; i++) {
-                td = tr[i].getElementsByTagName("td")[0];
-                if (td) {
-                    txtValue = td.textContent || td.innerText;
-                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                        tr[i].style.display = "";
-                    } else {
-                        tr[i].style.display = "none";
-                    }
-                }
-            }
-        }
-    </script>
+      <script>
+          function countySearch() {
+              var input = document.getElementById("countySearchInput");
+              var filter = input.value.toUpperCase();
+              var table = document.getElementById("countiesTable");
+              var tr = table.getElementsByTagName("tr");
+              for (i = 0; i < tr.length; i++) {
+                  td = tr[i].getElementsByTagName("td")[0];
+                  if (td) {
+                      txtValue = td.textContent || td.innerText;
+                      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                          tr[i].style.display = "";
+                      } else {
+                          tr[i].style.display = "none";
+                      }
+                  }
+              }
+          }
+      </script>
 
   </body>
 </html>

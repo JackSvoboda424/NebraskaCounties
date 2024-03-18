@@ -2,109 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Deciphering Nebraska's Liscensce Plates</title>
-    <style>
-        body {
-            background-color: cornsilk;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            margin: 25px;
-            padding-right: 50px;
-        }
-
-        h2 {
-            color: maroon;
-            margin-bottom: 5px;
-        }
-
-        p {
-            margin-top: 5px;
-        }
-
-        ul {
-            margin-top: 5px;
-        }
-
-        .importantPoint {
-            color: red;
-        }
-        /*Map now floats with the content*/
-        #nebraskaMap {
-            width: auto;
-            height: 450px;
-            padding: 10px;
-            float: left;
-        }
-
-        #countyHistory {
-            text-align: center;
-        }
-
-        .flex-container {
-            display: flex;
-            justify-content: left;
-            flex-wrap: wrap;
-            max-width: 1500px;
-        }
-
-        .flex-child {
-            flex: 2;
-            border: 1px solid white;
-            background-color: #944547;
-            text-align: center;
-            color: white;
-            padding: 20px;
-            font-size: 25px;
-            gap: 20px;
-        }
-
-        a:link {
-            text-decoration: none;
-            color: white;
-        }
-
-        a:hover {
-            text-decoration: underline;
-            color: black;
-            background-color: lightcoral;
-        }
-
-        .flex-container-horizontal {
-            display: flex;
-            gap: 50px;
-            flex: 1 1 0;
-        }
-
-        .flex-container-vertical {
-            display: flex;
-            flex-direction: column;
-            max-width: 1200px;
-        }
-    </style>
+    <title>Douglas County</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Nebraska's Counties</a>
+        <a class="nav-link" href="page2.html">Liscence Plate County Numbers</a>
+    </nav>
     <h2>Douglas County</h2>
-    <div class="flex-container">
-        <div class="flex-child">
-            <a href="index.html">Home</a>
-        </div>
-        <div class="flex-child">
-            <a href="page2.html">Liscence Plate County Numbers</a>
-        </div>
-    </div>
     <div class="flex-container-horizontal">
         <div class="flex-container-vertical">
             <h3>History</h3>
             <p>
-                Douglas County is a county located in the U.S. state of Nebraska. As of the 2020 United States Census, the population is 584,526. It is the state's most populous county, home to well over one-fourth of Nebraska's residents. Its county seat is Omaha.
-                <div>
-                    <img src="images/omaha.jpg" />
-                </div>
+                Douglas County, situated in eastern Nebraska and encompassing the city of Omaha, boasts a rich and dynamic history that reflects the broader narrative of American westward expansion and urban development. Established in 1854, Douglas County holds the distinction of being one of the first counties organized in the Nebraska Territory, a testament to its pivotal role in the region's early settlement.
+
+                The county's namesake, Stephen A. Douglas, a prominent political figure of the 19th century, lent his name to this burgeoning frontier territory. As pioneers and settlers migrated westward, drawn by promises of fertile land and economic opportunity, Douglas County emerged as a vital center of commerce, trade, and governance. The establishment of Omaha, initially a modest trading post along the Missouri River, laid the foundation for Douglas County's growth and prosperity.
+
+                Throughout the 19th century, Douglas County experienced rapid development fueled by the expansion of railroads, the influx of immigrants, and the establishment of businesses and industries. Omaha, strategically positioned as a transportation hub and gateway to the West, flourished as a bustling metropolis, attracting people from diverse backgrounds seeking a better life on the frontier.
+
+                The county's history is also marked by periods of adversity and resilience. In the late 19th and early 20th centuries, Douglas County weathered economic downturns, labor disputes, and social challenges, yet it persevered, adapting to changing circumstances and emerging stronger than before. The resilience of its residents, combined with the county's strategic location and entrepreneurial spirit, propelled Douglas County into the modern era as a vibrant urban center.
+
+                Today, Douglas County stands as a testament to its storied past and enduring legacy. Its rich cultural heritage, architectural landmarks, and diverse communities serve as reminders of the pioneers and visionaries who shaped its history. From its humble beginnings as a frontier outpost to its present-day prominence as a thriving metropolitan area, Douglas County continues to evolve while honoring its roots and traditions.
         </div>
         <div class="flex-container-vertical">
             <h3>Geography</h3>
             <p>
                 Douglas County is on the east side of Nebraska. Its east boundary line abuts the west boundary line of the state of Iowa, across the Missouri River. The Elkhorn River runs southward through the west-central part of Douglas County, and it is bordered on east (Missouri River) and west (Platte River) by rivers. According to the U.S. Census Bureau, the county has a total area of 339 square miles (880 km2), of which 328 square miles (850 km2) is land and 11 square miles (28 km2) (3.2%) is water.
             </p>
+            <div>
+                <img src="images/omaha.jpg" />
+            </div>
         </div>
     </div>
 </body>

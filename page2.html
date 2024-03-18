@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Deciphering Nebraska's Liscensce Plates</title>
+    <style>
+      body {
+        background-color: cornsilk; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; margin: 25px; padding-right: 50px;
+      }
+      h2 {color: maroon; margin-bottom: 5px;}
+      p {margin-top: 5px;}
+      ul {margin-top: 5px;}
+      .importantPoint {color: red;}
+      /*Map now floats with the content*/
+      #nebraskaMap {width: auto; height: 450px; padding: 10px; float: left;}
+      #countyHistory{ text-align: center;}
+        .flex-container {
+            display: flex;
+            justify-content: left;
+            flex-wrap: wrap;
+            max-width: 1500px;
+        }
+
+        .flex-child {
+            flex: 2;
+            border: 1px solid white;
+            background-color: #944547;
+            text-align: center;
+            color: white;
+            padding: 20px;
+            font-size: 25px;
+            gap: 20px;
+        }
+
+        a:link {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: black;
+            background-color: lightcoral;
+        }
+      @media (max-width: 500px) {
+        .flex-parent {
+          flex-direction: column;
+        }
+      }
+      .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .image-container img {
+        width: 400px;
+        height: 400px;
+        object-fit: cover; /* This ensures the image covers the specified dimensions */
+      }
+
+      @media (max-width: 900px) {
+        .image-container img {
+          width: 200px;
+          height: 200px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+      <h2>Deciphering Nebraska's Liscensce Plates</h2>
+      <div class="flex-container">
+          <div class="flex-child">
+              <a href="index.html">Home</a>
+          </div>
+          <div class="flex-child">
+              <a href="page2.html">Liscence Plate County Numbers</a>
+          </div>
+      </div>
+      <p>
+          Originally, every state liscensce plate began with a number, then had a dash, then a combination of letters and numbers. The number before the dash symbolized what county the car was from. With the
+          rapid growth of cities in Nebraska, some counties (Douglas, Lancaaster, and Sarpy) have had to abandon the practice to allow for more possible plate combinations. The number on the plate corresponds
+          to the number of vehicles in the county in 1922 , with the lowest numbered counties being the most vehicles in 1922.
+      </p>
+      <div>Below is an image of the state, with each county labeled with it's corresponding plate number.</div>
+      <img src="images/Nebraskaplatenumbers.png">
+  </body>
+</html>
